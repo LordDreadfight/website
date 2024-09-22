@@ -80,7 +80,7 @@ nav img {
 .contentbox{
 	margin-left: 25vw;
 	margin-right: 25vw;
-	margin-bottom: 0rem;
+	margin-bottom: 10rem;
 	padding-top: 2rem;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -95,14 +95,14 @@ nav img {
 	position: relative;
 	margin: auto;
 	width: 100%;
-	height: auto;
+	height: 75vh;
 	overflow: hidden;
-	caret-color: transparent;
   }
   /* Hide the images by default */
 .mySlides {
 	display: none;
 	text-align: center;
+	height: 75vh;
   }
   /* Add keyframes for slide in animation */
 @keyframes slideIn {
@@ -165,33 +165,18 @@ body {
 	scroll-behavior: smooth;
 }
   
-  /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-color: #32cd32 transparent;
-  }
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width:  0.5rem;
-	border-radius: 0.25rem;
+::-webkit-scrollbar {
+	width:  0.5em;
   }
-
-  *::-webkit-scrollbar-track {
-    background: transparent;
+::-webkit-scrollbar-track {
+	background: transparent; 
   }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #32cd32;
-    border-radius: 0.25rem;
+::-webkit-scrollbar-thumb {
+	background: #32cd32;
+	border-radius:  0.25em ; 
   }
-
-  .impressum-buttne {
-	padding: 1rem 2rem;
-	text-decoration: none;
-	color: #32cd32;
-	font-size: 1.2vw;
-	vertical-align: auto;
-	height: 1vh;
-	text-align: center;
+::-webkit-scrollbar-thumb:hover {
+	background: green;
   }
+  
