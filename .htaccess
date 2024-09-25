@@ -20,7 +20,6 @@ RewriteRule ^home/en/?$ /en/enindex.html [NC,L]
 RewriteRule ^news/en/?$ /en/ennews.html [NC,L]
 RewriteRule ^projects/en/?$ /en/enprojects.html [NC,L]
 RewriteRule ^streams/en/?$ /en/enstream.html [NC,L]
-RewriteRule ^about/en/?$ /en/enabout.html [NC,L]
 RewriteRule ^printbed/en/?$ /en/enprintbed.html [NC,L]
 
 # General (default language) rewrites
