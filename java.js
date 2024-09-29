@@ -23,6 +23,7 @@ function showSlides() {
     if (slideIndex >= slides.length) {
       slideIndex = 0;
     }
+
     // Show the next slide
     slides[slideIndex].style.display = "block";
 
