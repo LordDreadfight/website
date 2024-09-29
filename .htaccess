@@ -1,17 +1,8 @@
 # Enable the rewrite engine
 RewriteEngine on
 
-# Force HTTPS redirection
-RewriteCond %{HTTPS} off
-RewriteCond %{SERVER_NAME} ^(www\.)?letti\.site$ [NC]
-RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301,NE]
-
 # Redirect the root domain (letti.site) to /home
-RewriteRule ^$ /home [L]
-
-# Remove trailing slashes (except for directories)
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/$ /$1 [L,R=301]
+RewriteRule ^$ /home/de/ [L]
 
 # Specific English language rewrites
 # These should be handled first to prevent general rules from applying too early
@@ -24,9 +15,9 @@ RewriteRule ^printbed/en/?$ /en/enprintbed.html [NC,L]
 
 # General (default language) rewrites
 # These rules should apply only if the English rules don't match
-RewriteRule ^home/?$ /index.html [NC,L]
-RewriteRule ^news/?$ /news.html [NC,L]
-RewriteRule ^projects/?$ /projects.html [NC,L]
-RewriteRule ^streams/?$ /stream.html [NC,L]
-RewriteRule ^about/?$ /about.html [NC,L]
-RewriteRule ^printbed/?$ /enprintbed.html [NC,L]
+RewriteRule ^home/de/?$ /de/index.html [NC,L]
+RewriteRule ^news/de/?$ /de/news.html [NC,L]
+RewriteRule ^projects/de/?$ /de/projects.html [NC,L]
+RewriteRule ^streams/de/?$ /de/stream.html [NC,L]
+RewriteRule ^about/de/?$ /de/about.html [NC,L]
+RewriteRule ^printbed/de/?$ /de/printbed.html [NC,L]
