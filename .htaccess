@@ -12,6 +12,7 @@ RewriteRule ^news/en/?$ /en/ennews.html [NC,L]
 RewriteRule ^projects/en/?$ /en/enprojects.html [NC,L]
 RewriteRule ^streams/en/?$ /en/enstream.html [NC,L]
 RewriteRule ^printbed/en/?$ /en/enprintbed.html [NC,L]
+RewriteRule ^article1/en/?$ /en/art_statewebsite.html [NC,L]
 
 # General (default language) rewrites
 # These rules should apply only if the English rules don't match
@@ -21,4 +22,4 @@ RewriteRule ^projects/de/?$ /de/projects.html [NC,L]
 RewriteRule ^streams/de/?$ /de/stream.html [NC,L]
 RewriteRule ^about/de/?$ /de/about.html [NC,L]
 RewriteRule ^printbed/de/?$ /de/printbed.html [NC,L]
-RewriteRule ^zustandwebsite/de/?$ /de/art_zustandwebsite.html [NC,L]
+RewriteRule ^article1/de/?$ /de/art_zustandwebsite.html [NC,L]
