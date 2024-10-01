@@ -3,11 +3,11 @@
 	src: url("rss/font/Ubuntu-Regular.ttf") format("truetype");
 }
  
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 600px) {
 	.contentbox{
-		margin-left: 1rem;
-		margin-right: 1rem;
-		margin-bottom: 10rem;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
 		height: max-content;
 	}
 }
