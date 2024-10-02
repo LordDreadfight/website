@@ -23,3 +23,10 @@ RewriteRule ^streams/de/?$ /de/stream.html [NC,L]
 RewriteRule ^about/de/?$ /de/about.html [NC,L]
 RewriteRule ^printbed/de/?$ /de/printbed.html [NC,L]
 RewriteRule ^article1/de/?$ /de/art_zustandwebsite.html [NC,L]
+
+
+
+<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+    Header set Cache-Control "max-age=31536000, public"
+    Header set Expires "Thu, 31 Dec 2037 23:59:59 GMT"
+</FilesMatch>
