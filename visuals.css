@@ -67,6 +67,10 @@
 		object-fit: cover; 
 		vertical-align: center;
 	}
+
+	.aboutmepixelart{
+		width: 40vw;
+	}
 } 
 
 @media (min-width: 1081px) {
@@ -129,6 +133,10 @@
 		width: auto;
 		object-fit: cover; 
 		vertical-align: center;
+	}
+
+	.aboutmepixelart{
+		object-fit: cover;
 	}
 }
 
@@ -206,6 +214,7 @@
 	display: flex;
 	justify-content: center;
 }
+
 .mySlides.slideIn {
 	animation-name: slideIn;
 	animation-duration: 1s;
